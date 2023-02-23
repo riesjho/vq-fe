@@ -12,7 +12,7 @@ const Search = () => {
     <div>
         <h1>Search</h1>
         <TextField id="outlined" label="Input Country Name" variant="outlined" onChange={e => setSearch(e.target.value)}  value={search}/>
-        <Button variant="contained" className={styles.btnSearch} onClick={() => Router.push({pathname: '/test',
+        <Button variant="contained" className={styles.btnSearch} onClick={() => Router.push({pathname: '/details',
              query: { country: search }})}>Search</Button>
         
     </div>
