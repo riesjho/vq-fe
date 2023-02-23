@@ -2,7 +2,7 @@ import React from 'react'
 import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import axios from "axios";
-import { withRouter } from 'next/router'
+
 
 const Details = () => {
     const [data, setData] = useState([]);
@@ -19,7 +19,7 @@ const Details = () => {
       }, []);
 
 	return (
-		<div>{JSON.stringify(data)}</div>
+		<div>{JSON.stringify(data, null, 2)}</div>
 	);
 }
 
