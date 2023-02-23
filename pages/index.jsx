@@ -1,9 +1,14 @@
+import Search from "../modules/Search";
+import { Container } from "@mui/system";
 
 
 
 
 export default function Home() {
 	return (
-		<div></div>
+		<Container fixed>
+
+			<Search />
+		</Container>
 	);
 }
